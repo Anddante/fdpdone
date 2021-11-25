@@ -1,0 +1,64 @@
+.title-section {
+  display: flex;
+  align-items: center;
+  padding: 43px 0px
+;
+  .title {
+    color: $dark;
+    font-weight: 700;
+    line-height: 1.19;
+    font-size: 54px;
+    margin-bottom: 3.1rem;
+    padding: 0px 17px;
+    letter-spacing: 6px;
+    @include max-screen(992, 1199) {
+      font-size: 40px;
+    }
+
+    @include max-screen(991) {
+      font-size: 28px;
+      margin-bottom: 1rem;
+    }
+
+    @include max-screen(767) {
+      font-size: 28px;
+    }
+    @include max-screen(480) {
+      font-size: 26px;
+    }
+  }
+  .sub-title {
+    font-family: $headings-font-family;
+    color: $sub-headings-color;
+    display: block;
+    font-weight: 300;
+    line-height: 2.777;
+    margin-bottom: 4.4rem;
+    position: absolute;
+    z-index: -1;
+    font-size: 100px;
+    @include max-screen(992, 1199) {
+      font-size: 80px;
+    }
+
+    @include max-screen(991) {
+      font-size: 60px;
+      margin-bottom: 1rem;
+    }
+
+    @include max-screen(767) {
+      font-size: 48px;
+    }
+    @include max-screen(480) {
+      font-size: 46px;
+    }
+  }
+}
+
+.sub-section-title {
+  .title {
+    font-weight: 600;
+    font-size: 24px;
+    margin-bottom: 30px;
+  }
+}

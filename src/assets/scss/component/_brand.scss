@@ -1,0 +1,27 @@
+/*--------------------------------------
+/*  Brand Css Start
+----------------------------------------*/
+
+.single-brand {
+  text-align: center;
+  cursor: pointer;
+  .thumb {
+    display: block;
+  }
+  img {
+    transition: filter .3s ease-in-out;
+    -webkit-filter: grayscale(0%);
+    filter: grayscale(99%);
+    opacity: .3;
+  }
+  img:hover {
+    transition: filter .3s ease-in-out;
+    -webkit-filter: grayscale(0%);
+    filter: grayscale(0%);
+    opacity: 1;
+  }
+}
+
+/*--------------------------------------
+/*  Brand Css ENd
+----------------------------------------*/

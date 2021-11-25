@@ -1,0 +1,142 @@
+.custom-container {
+  @include min-screen(1440) {
+    max-width: 1240px;
+  }
+}
+.path-img {
+  position: absolute;
+  left: 0;
+  bottom: 150px;
+  z-index: -1;
+}
+
+.all-container {
+    width: 100%;
+}
+.path-img {
+  position: absolute;
+  left: 0;
+  bottom: 150px;
+  z-index: -1;
+}
+
+.service-cases {
+  background-color: $info;
+  height: 433px;
+  @include max-screen(768) {
+    height: 100%
+  }
+
+  .number {
+    font-weight: 600;
+    font-size: 60px;
+    color: #6A51A2;
+    font-family: "GloberThin";
+    margin-bottom: 0px;
+    @include max-screen(768) {
+      font-size: 28px;
+      line-height: 34px;
+      padding-top: 20px;
+    }
+  }
+  .service-media-body {
+    flex: 1 1;
+  }
+  .service-media {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+  }
+  .service-media-img {
+    margin: 0 -20px;
+    padding: 0px 47px;
+    @include max-screen(768, 992) {
+      margin: 0 -20px;
+      padding: 0px 33px;
+    }
+    @include max-screen(576) {
+      padding: 0px;
+      margin: 0px;
+    }
+    img {
+      width: 100%;
+    }
+    .img-cases{
+      @include max-screen(740, 991) {
+        display: none;
+      }
+    }
+    .img-cases-table{
+      @include max-screen(992,5000) {
+        display: none;
+      }
+      @include max-screen(740,991) {
+        display: block;
+      }
+      @include max-screen(739) {
+        display: none;
+      }
+    }
+  }
+  .title {
+    font-family: GloberBold;
+    font-size: 32px;
+    line-height: 38px;
+    display: flex;
+    align-items: center;
+    @include max-screen(526) {
+      font-size: 14px;
+      line-height: 16px;
+      font-weight: bold;
+    }
+    @include max-screen(526, 992) {
+      font-size: 16px;
+      line-height: 16px;
+      font-weight: bold;
+    }
+  }
+  .sub-title {
+    font-size: 14px;
+    width: 254px;
+  }
+}
+
+@include max-screen(480) {
+  .service-cases {
+    .sub-title {
+      width: 130px;
+      font-size: 12px;
+    }
+  }
+}
+
+@include max-screen(480, 768) {
+  .service-cases {
+    .sub-title {
+      width: 180px;
+      font-size: 12px;
+    }
+  }
+}
+
+@include max-screen(526, 992) {
+  .service-cases {
+    .sub-title {
+      width: 240px;
+      font-size: 12px;
+    }
+  }
+}
+
+
+.service-media-wrapper {
+  @include max-screen(739) {
+    display: flex;
+  }
+}
+
+.service-nopadding {
+  @include max-screen(768) {
+   padding: 0px;
+  }
+}

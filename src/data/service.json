@@ -1,0 +1,22 @@
+[
+    {
+        "id": 1,
+        "title": "Talk to us",
+        "excerpt": "By understanding what your goals are, we can offer solutions that will help you move forward"
+    },
+    {
+        "id": 2,
+        "title": "Create a plan",
+        "excerpt": "We will help you make a full-fledged plan for the development and implementation of the project"
+    },
+    {
+        "id": 3,
+        "title": "Choose a service",
+        "excerpt": "Learn more about services and development stages"
+    },
+    {
+        "id": 4,
+        "title": "Get Improved",
+        "excerpt": "Get a great result, which will help you improve your work and speed up your growth"
+    }
+]

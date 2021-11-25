@@ -1,0 +1,175 @@
+/*--------------------------------------
+/*  1 feature card
+----------------------------------------*/
+
+.grid-item {
+  .brand {
+    float: right;
+  }
+  .logo {
+  float: right;
+  }
+  .feature-card {
+    position: relative;
+    overflow: hidden;
+    padding: 36px 46px;
+    height: 300px;
+    @include max-screen(992, 1199) {
+      padding: 25px;
+    }
+    @include max-screen(580,992) {
+      padding: 18px 34px;
+      height: 350px;
+    }
+    @include max-screen(580) {
+      padding: 18px 34px;
+    }
+    border-radius: 6px;
+    transition: all 0.5s ease-in-out;
+    &.bg-light {
+      &:hover,
+      &.active {
+        background-color: $primary !important;
+        box-shadow: 0px 16px 27px 0px rgba(0, 0, 0, 0.08);
+        color: $light !important;
+      }
+    }
+    &:hover,
+    &.active {
+      .logo {
+        filter: contrast(0%) brightness(2.4);
+  }
+      .brand{
+        filter: contrast(0%) brightness(2.4);
+      }
+}
+    .service-logo {
+      line-height: 1.1;
+    }
+    .title {
+      color: $card-headings-color;
+      font-family: "GloberBold";
+      text-transform: capitalize;
+      font-weight: 600;
+      line-height: 0.1;
+      font-size: 24px;
+      a {
+        color: inherit;
+      }
+
+      @include max-screen(992, 1199) {
+        font-size: 18px;
+      }
+      @include max-screen(576,991) {
+        font-size: 14px;
+      }
+      @include max-screen(575) {
+        font-size: 20px;
+      }
+    }
+    .excerpt{
+      font-size: 14px;
+      font-family: "GloberBold";
+    }
+    .tags{
+      font-size: 10px;
+      max-width: 200px;
+      color: $card-headings-color;
+      letter-spacing: 0.4px;
+    }
+    .subtitle {
+      font-size: 10px;
+      font-weight: bold;
+      color: $card-headings-color;
+    }
+    &:hover,
+    &.active {
+      .title {
+        color: $light !important;
+      }
+      .subtitle {
+        color: $light !important;
+      }
+      .tags {
+        color: $light !important;
+      }
+    }
+  }
+}
+
+/*--------------------------------------
+/*  2 service card
+----------------------------------------*/
+
+.service-card {
+  padding: 50px 38px;
+
+  @include max-screen(992, 1199) {
+    padding: 25px;
+  }
+  border-radius: 6px;
+  transition: all 0.5s ease-in-out;
+  &.bg-light {
+    &:hover,
+    &.active {
+      background-color: $primary !important;
+      box-shadow: 0px 16px 27px 0px rgba(0, 0, 0, 0.08);
+      color: $light !important;
+    }
+  }
+  &:hover,
+  &.active {
+    .logo {
+      filter: contrast(0%) brightness(2.4);
+    }
+    .brand{
+      filter: contrast(0%) brightness(2.4);
+    }
+  }
+
+  .title {
+    color: $card-headings-color;
+    text-transform: capitalize;
+    font-weight: 600;
+    font-family: "GloberBold";
+    line-height: 1.25;
+    font-size: 18px;
+    a {
+      color: inherit;
+    }
+    @include max-screen(768, 1199) {
+      font-size: 18px;
+    }
+    @include max-screen(576,767) {
+      font-size: 14px;
+    }
+    @include max-screen(575) {
+      font-size: 20px;
+    }
+  }
+  .excerpt{
+    font-size: 14px;
+    font-family: "GloberBold";
+  }
+  .tags{
+    font-size: 10px;
+    color: $card-headings-color;
+  }
+  .subtitle {
+    font-size: 10px;
+    font-weight: bold;
+    color: $card-headings-color;
+  }
+  &:hover,
+  &.active {
+    .title {
+      color: $light !important;
+    }
+    .subtitle {
+      color: $light !important;
+    }
+    .tags {
+      color: $light !important;
+    }
+  }
+}

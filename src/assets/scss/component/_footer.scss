@@ -1,0 +1,166 @@
+// footer-top
+.footer-top {
+  padding: 0px 0px 70px;
+  @include min-screen(1200) {
+    padding: 125px 0px;
+  }
+}
+
+.footer-widget {
+  .title {
+    color: #253138;
+    font-weight: 600;
+    line-height: 1.25;
+    margin-bottom: 25px;
+    font-size: 24px;
+    @include max-screen(767) {
+      margin-bottom: 15px;
+    }
+  }
+  p {
+    margin-bottom: 12px;
+  }
+}
+.footer-logo {
+  display: inline-block;
+}
+
+// footer-social-links
+
+.footer-social-links {
+  display: flex;
+  padding-top: 5px;
+  li {
+    margin-right: 20px;
+    .footer-social-link {
+      color: $dark;
+      font-size: 16px;
+      &:hover {
+        color: $primary;
+      }
+    }
+  }
+}
+
+// footer-menu
+
+.footer-menu {
+  li {
+    margin-bottom: 10px;
+    &:last-child {
+      margin-bottom: 0;
+    }
+    .footer-link {
+      color: #6c6e75;
+      &:hover {
+        color: $primary;
+      }
+    }
+  }
+}
+
+// address
+.address {
+  li {
+    &:nth-child(2) {
+      margin-bottom: 10px;
+    }
+    .address-link {
+      color: #6c6e75;
+      &:hover {
+        color: $primary;
+      }
+    }
+  }
+}
+
+// copyright-info
+
+.copyright-row{
+  display:flex;
+  .logo-img {
+    @include max-screen(739) {
+      display: none;
+    }
+  }
+  .logo-img-rev {
+    @include max-screen(1199) {
+      display: none;
+    }
+  }
+
+}
+.copy-right-section {
+
+  padding: 7px 0px 0px;
+  background-color: #383A3C;
+}
+.copyright-info {
+  h1 {
+    font-size: 2vw;
+    font-family: "GloberBold";
+    @include max-screen(739) {
+      font-size: 18px;
+    }
+  }
+    p {
+      color: $white;
+      text-align: left;
+      font-size: 14px;
+      line-height: 20px;
+      margin-bottom: 0.1rem;
+      @include max-screen(991) {
+        font-size: 12px;
+      }
+
+      &:hover {
+        text-decoration: underline;
+        color: $primary;
+      }
+    }
+
+  span.red {color: $red;}
+  span.fil {color: $primary;}
+  span.white {color: $white}
+
+
+}
+
+// footer-svg
+
+.footer-svg {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 696px;
+  z-index: -1;
+}
+
+.footer-shape {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  z-index: -1;
+
+  @include max-screen(768, 991) {
+    height: 100%;
+  }
+
+  @include max-screen(739) {
+    height: 50%;
+  }
+}
+
+.logo-footer-img {
+    display: none;
+    @include max-screen(739) {
+        display: flex;
+        float: right;
+        position: absolute;
+        right: 10%;
+        width: 104px;
+        padding: 12px;
+  }
+}
